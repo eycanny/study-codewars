@@ -16,6 +16,7 @@
 # array will not be empty.
 #--------------------------------------------------------------------#
 
+#Solution 1
 def find_smallest_int(arr):
     smallest_int = arr[0]
     
@@ -24,3 +25,8 @@ def find_smallest_int(arr):
             smallest_int = num
             
     return smallest_int
+
+
+#Solution 2
+def find_smallest_int(arr):
+    return sorted(arr)[0]
