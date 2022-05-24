@@ -8,6 +8,7 @@
 // In case of a draw return Draw!.
 // #--------------------------------------------------------------------#
 
+// Solution 1
 const rps = (p1, p2) => {
   if (p1 === p2) {
     return 'Draw!';
@@ -37,4 +38,24 @@ const rps = (p1, p2) => {
       return 'Player 1 won!';
     }
   }
+};
+
+// Solution 2
+const rps = (p1, p2) => {
+  
+  if (p1 === p2) {
+    return 'Draw!'
+  }
+  
+  const rules = {
+    'rock': 'scissors',
+    'scissors': 'paper',
+    'paper': 'rock'
+  };
+  
+  if (rules[p1] === p2) {
+    return 'Player 1 won!'
+  }
+  
+  return 'Player 2 won!'
 };
