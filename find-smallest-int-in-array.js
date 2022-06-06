@@ -16,7 +16,7 @@
 // array will not be empty.
 // #--------------------------------------------------------------------#
 
-#Solution 1
+//Solution 1
 class SmallestIntegerFinder {
   findSmallestInt(args){
     let smallestInt = args[0];
@@ -32,7 +32,7 @@ class SmallestIntegerFinder {
 }
 
 
-#Solution 2
+//Solution 2
 class SmallestIntegerFinder {
   findSmallestInt(args){
     return args.sort((a,b) => a-b)[0];
